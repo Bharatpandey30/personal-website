@@ -1,0 +1,119 @@
+/* Contact Form Container */
+.bigCont {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* Increased border radius */
+  }
+  
+  /* Form Container */
+  .formCont {
+    width: 100%;
+    max-width: 900px; /* Adjusted max-width for responsiveness */
+    padding: 10px;
+    display: flex;
+    border: 4px solid #8a1887; 
+    margin-top: -150px;
+    margin-left: 400px;
+    background-color: #fff;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Increased shadow depth */
+  }
+  .contactForm{
+    width: 60%;
+ 
+  }
+  .formCont h1 {
+    width: 350px;
+    margin-left: 50px;
+    font-size: 3em;
+    color: #891f8d; /* Updated title color */
+    margin-top: 80px; /* Added space below the title */
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 40%;
+    height: 40px;
+    margin: 4px;
+    padding: 8px;
+    border: 2px solid #8a1887; /* Adjusted border color */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Increased space between inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    border-color: #6f66d5; /* Border color on focus */
+  }
+  
+  .contactForm textarea {
+    height: 120px; /* Reduced textarea height */
+    width: 85%;
+  }
+  
+  .contactForm button {
+    width: 50%;
+    height: 60px;
+    background-image: linear-gradient(to right, #891f8d, #6f66d5);
+    color: #fff;
+    border: none;
+    margin-left: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactForm button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Contact Links */
+  .contactLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .contactLinks h3 {
+    color: #f0daf1; /* Updated color */
+    margin-top: 40px; /* Added space above the heading */
+    font-size: xx-large;
+  }
+  .contactLinks ul {
+    display: flex;
+  }
+  
+  .il {
+    border-radius: 50%; /* Rounded social icons */
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .il:hover {
+    transform: scale(1.2); /* Increase icon size on hover */
+  }
+  
+  /* Contact Info */
+  .contactInfo {
+    color: #fffafa;
+    margin-top: 20px; /* Adjusted margin-top */
+    text-align: center; /* Center align text */
+    display: flex;
+    justify-content: center;
+  }
+  .contactInfo p{
+    margin: 10px;
+    font-size: x-large;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 20px;
+  }
+  

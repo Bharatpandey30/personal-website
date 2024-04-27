@@ -42,10 +42,10 @@
 }
 @keyframes floatAnimation {
     0% {
-      transform: translateY(-100);
+      transform: translateY(-300);
     }
     50% {
-      transform: translateY(-140px);
+      transform: translateY(-310px);
     }
     100% {
       transform: translateY(-80);
@@ -53,7 +53,7 @@
   }
   
   .ast {
-    animation: floatAnimation 3s ease-in-out infinite;
+    animation: floatAnimation 2s ease-in-out infinite;
   }
   
 .greeting h1{
@@ -68,7 +68,7 @@
     font-size: 1em;
     opacity: 0; /* Initially hidden */
    font-variant: linear-gradient(to right, rgba(170, 54, 124, 0.5) 30%, rgba(74, 47, 189, 0.5) 80%);
-    animation: fadeInWords 14s infinite; /* Animation duration: 10 seconds */
+    animation: fadeInWords 5s infinite; /* Animation duration: 10 seconds */
 }
 
 /* Define keyframes for fading in words */

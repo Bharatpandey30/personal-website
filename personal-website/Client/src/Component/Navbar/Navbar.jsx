@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Router } from 'react-router-dom';
+import Contacts from '../../Pages/Contact';
 import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 import './Navbar.css';
 
@@ -39,8 +40,11 @@ const Navbar = () => {
   };
   
   const scrolltoExp =()=> {
-    window.scrollTo({top:1800, behavior:"smooth"});
+    window.scrollTo({top:2100, behavior:"smooth"});
 
+  }
+  const scrollToConatct = () =>{
+    window.scrollTo({top:2900, behavior:"smooth"})
   }
 
 
@@ -48,15 +52,16 @@ const Navbar = () => {
   return (
     <div className={`navbarContainer ${scrolled ? 'scrolled' : ''}`}>
       <div className='navRight'>
-        <img src='' alt='' />
-        <span className='NavItem'>Hi! There</span>
-      </div>
-      <div className='navleft'>
       <span className='NavItem' onClick={scrollToTop}>Home</span>
         <span className='NavItem' onClick={handleSkillsClick}>Skills</span>   
         <span className='NavItem' onClick={scrollToEducation}>Education</span>
         <span className='NavItem' onClick={scrolltoExp}>Experience</span>
         <span className='NavItem'>Relavant Projects</span>
+       
+      </div>
+      <div className='navleft'>
+      <img src='' alt='' />
+        <span className='NavItem' onClick={scrollToConatct}>Contact me</span>
         <DensitySmallIcon className='navSmall' />
       </div>
     </div>

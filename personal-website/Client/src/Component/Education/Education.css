@@ -1,11 +1,12 @@
 .educationContainer {
   width: 100%;
   margin: 0 auto;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-top: #f0f0f0 solid 1px;
-  background-image: linear-gradient(to right, rgba(40, 37, 39, 0.5) 20%, rgba(74, 47, 189, 0.5) 80%);
+  background-image: linear-gradient(to right, rgba(36, 29, 33, 0.5) 30%, rgba(74, 47, 189, 0.5) 80%);
   
 }
 .educationContainer h1{
@@ -15,7 +16,7 @@
 }
 .educationImage{
   margin-top: 150px;
-  margin-left: -40px;
+  margin-left: -100px;
 }
 .educationItem {
   display: flex;
@@ -24,8 +25,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 150px;
-  margin-bottom: 20px;
-  margin-left: 40px;
+  margin-left: -50px;
   border-radius: 10px; /* Rounded corners for education items */
   box-shadow: -5px 0 12px rgba(229, 224, 224, 0.1);  /* Box shadow for a subtle effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */

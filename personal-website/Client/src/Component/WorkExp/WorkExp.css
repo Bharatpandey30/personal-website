@@ -10,6 +10,9 @@
 }
 .cont{
   display: flex;
+  height: 800px;
+  margin-bottom: 100px;
+  margin-left: 100px;
 }
 .wrkImg{
   margin-left: 100px;

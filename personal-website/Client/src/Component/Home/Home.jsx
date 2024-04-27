@@ -5,7 +5,7 @@ import BodyTop from '../BodyTop/BodyTop';
 import Education from '../Education/Education';
 import Skills from '../Skills/Skills';
 import WorkExp from '../WorkExp/WorkExp';
-
+import Form from '../contact form/form';
 function Home() {
     return (
         <div className='homeContainer'>
@@ -14,6 +14,7 @@ function Home() {
            <Skills/>
            <Education/>
             <WorkExp/>
+            <Form/>
         </div>
     );
 }

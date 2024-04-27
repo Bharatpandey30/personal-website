@@ -18,13 +18,13 @@
   
 .navRight{
 color: white;
-margin-left: 140px;
+margin-left: 70px;
 font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 font-size: xx-large;
 display: flex;
 }
 .navleft {
-    margin-left: auto; /* Moves .navleft to the right end */
+    margin-left: 600px; /* Moves .navleft to the right end */
     display: flex;
     flex-direction: row; /* Horizontal layout */
     align-items: center;
