@@ -56,7 +56,7 @@ const Navbar = () => {
         <span className='NavItem' onClick={handleSkillsClick}>Skills</span>   
         <span className='NavItem' onClick={scrollToEducation}>Education</span>
         <span className='NavItem' onClick={scrolltoExp}>Experience</span>
-        <span className='NavItem'>Relavant Projects</span>
+        <span className='NavItem' >Relavant Projects</span>
        
       </div>
       <div className='navleft'>

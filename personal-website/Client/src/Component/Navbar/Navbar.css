@@ -18,25 +18,31 @@
   
 .navRight{
 color: white;
+width: 900px;
 margin-left: 70px;
 font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 font-size: xx-large;
 display: flex;
+right: 0;
 }
 .navleft {
-    margin-left: 600px; /* Moves .navleft to the right end */
+    margin-left: 500px; 
+    width: 300px;/* Moves .navleft to the right end */
     display: flex;
     flex-direction: row; /* Horizontal layout */
     align-items: center;
     font-size: xx-large;
+    left: 0;
 }
 
 .NavItem{
     color: white;
+    width: auto;
     margin: 30px;
     font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: x-large;
 }
+
 .NavItem:hover{
    color: rgb(212, 210, 210);
    cursor: pointer;
@@ -50,38 +56,49 @@ display: flex;
     visibility: hidden;
     display: none; /* Hide .navSmall by default */
 }
-@media (max-width:800px) {
-    .navbarContainer {
-        width: 100%;
-    }
-    .navRight {
-        margin-left: 20px;
-        margin-right: 20px;
-        position: fixed;
-    }
-    .navleft{
-        margin-left: 150px;
-    }
-}
+/* Styles for small screens (max-width: 600px) */
 @media (max-width: 600px) {
     .NavItem {
-        display: none; /* Hide .navleft on small screens */
+        display: none; /* Hide .NavItem on small screens */
     }
+
     .navSmall {
         visibility: visible; /* Make .navSmall visible */
         display: block;
-        margin-left: 300px;
-         /* Show .navSmall on small screens */
+        margin-left:430px; /* Example margin */
+        /* Additional styles as needed for small screens */
     }
-    .navRight {
-        margin-left: 20px;
-        margin-right: 20px;
-        position: fixed;
-    }
+
     .navleft {
-   
-        margin-left: 20px;
-        margin-right: 20px;
-        position: fixed;
+        
+        margin-left: auto; /* Center .navRight horizontally */
+        margin-right: 10px; /* Adjust margin for .navRight on medium screens */
+    }
+
+    .navRight {
+        margin-left: 10px; /* Adjust margin for .navleft on medium screens */
+        margin-right: auto; /* Center .navleft horizontally */
+        
+    }
+}
+
+/* Styles for medium screens (max-width: 800px) */
+@media (max-width: 800px) {
+    .navRight,
+    .navleft {
+        position: fixed; /* Reapply fixed positioning for medium screens */
+        margin: 10px; /* Example margin */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    }
+
+    .navleft {
+        margin-left: auto; /* Center .navRight horizontally */
+        margin-right: 10px; /* Adjust margin for .navRight on medium screens */
+    }
+
+    .navRight {
+        margin-left: 10px; /* Adjust margin for .navleft on medium screens */
+        margin-right: auto; /* Center .navleft horizontally */
+        
     }
 }

@@ -17,45 +17,36 @@ function ContactForm() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
   };
-    const [formData, setFormData] = useState({
-      email: '',
-      name: '',
-      message: '',
-    });
-  
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData((prevData) => ({ ...prevData, [name]: value }));
-    };
-    const [submitStatus, setSubmitStatus] = useState('');
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-          const response = await axios.post('http://localhost:5000/api/form', formData, {
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          });
-          console.log('Response:', response.data);
-          setSubmitStatus('success');
-          setFormData({ email: '', name: '', message: '' });
-        } catch (error) {
-          console.error('Error:', error.message);
-          setSubmitStatus('error');
-        }
-      };
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    message: '',
+  });
 
-//   const sendMessage = async (formData) => {
-//     try {
-//       const response = await axios.post('http://localhost:5000/api/form', formData);
-//       console.log('Response:', response.data);
-//       // Clear the form after successful submission
-//       setFormData({ email: '', name: '', message: '' });
-//     } catch (error) {
-//       console.error('Error:', error.message);
-//     }
-//   };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('http://localhost:5000/submitForm', formData);
+      setFormData({
+        email: '',
+        name: '',
+        message: '',
+      });
+      alert('Form submitted successfully');
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting form');
+    }
+  };
   return (
     <div className="bigCont" style={Style}>
       <div className='formCont'>
