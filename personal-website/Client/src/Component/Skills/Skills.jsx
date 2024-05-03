@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import './Skills.css';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import meter1 from '../../assets /img/meter1.svg';
-import meter2 from '../../assets /img/meter2.svg';
-import meter3 from '../../assets /img/meter3.svg';
+import meter1 from '../../assets /img/frontend.webp';
+import meter2 from '../../assets /img/fullstack.png';
+import meter3 from '../../assets /img/webdev.webp';
+import mern from '../../assets /img/mern.png';
+import data from '../../assets /img/dataan.jpeg';
+import sql from '../../assets /img/sql.avif';
+import python from '../../assets /img/python.webp';
+import manymore from '../../assets /img/manymore.png'
 
 function Skills() {
   const [slidePosition, setSlidePosition] = useState(0);
 
   const handleRightClick = () => {
     const newPosition = slidePosition + 1;
-    if (newPosition < 3) {
+    if (newPosition < 6) {
     setSlidePosition(newPosition);
     }
     else {
@@ -19,10 +24,15 @@ function Skills() {
     }
   };
 
+  const handleClick = () => {
+    window.open('/resume.pdf', 'blank');
+  };
+  
+
   const handleLeftClick = () => {
     const newPosition = slidePosition - 1;
     setSlidePosition(newPosition);
-    if (newPosition > -3) {
+    if (newPosition > -6) {
         setSlidePosition(newPosition);
         }
         else {
@@ -42,23 +52,35 @@ function Skills() {
         <div className='imgWrapper' >
           <div className='imgBlock'>
             <img className='Img1' style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={meter1} alt='Image' />
-            <span style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Front End Development</span>
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Front End Development</span>
           </div>
           <div className='imgBlock'>
             <img className='Img1' style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={meter2} alt='Image' />
-            <span style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Full stack Development</span>
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Full stack Development</span>
           </div>
           <div className='imgBlock'>
             <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={meter3} alt='Image' />
-            <span style={{ transform: `translateX(-${slidePosition * 150}%)` }}> Web Development</span>
+            <span  className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}> Web Development</span>
           </div>
           <div className='imgBlock'>
-            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={meter3} alt='Image' />
-            <span style={{ transform: `translateX(-${slidePosition * 150}%)` }}> Mern Stack</span>
+            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={mern} alt='Image' />
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}> Mern Stack</span>
           </div>
           <div className='imgBlock'>
-            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={meter3} alt='Image' />
-            <span style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Data analyst</span>
+            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={data} alt='Image' />
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}>Data analyst</span>
+          </div>
+          <div className='imgBlock'>
+            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={sql} alt='Image' />
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}> SQL</span>
+          </div>
+          <div className='imgBlock'>
+            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} src={python} alt='Image' />
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}> Python</span>
+          </div>
+          <div className='imgBlock'>
+            <img className='Img1'style={{ transform: `translateX(-${slidePosition * 150}%)` }} onClick={handleClick} src={manymore} alt='Image' />
+            <span className='imgtext' style={{ transform: `translateX(-${slidePosition * 150}%)` }}> click here ☝️</span>
           </div>
         </div>
         <KeyboardDoubleArrowRightIcon

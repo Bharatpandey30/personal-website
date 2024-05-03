@@ -49,23 +49,15 @@ function ContactForm() {
   };
   return (
     <div className="bigCont" style={Style}>
-      <div className='formCont'>
-        <h1>Get in touch</h1>
-        <form className='contactForm' onSubmit={handleSubmit}>
-          <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} placeholder='Your Name' />
-          <input type='email' id='email' name='email' value={formData.email} onChange={handleChange} placeholder='Your Email' />
-          <textarea id='message' name='message' value={formData.message} onChange={handleChange} placeholder='Your Message'></textarea>
-          <button type='submit' >Send</button>
-        </form>
-      </div>
+     
       <div className='contactLinks'>
-        <h3>Connect here with me:</h3>
+        <h3>Connect with me:</h3>
         <ul>
-          <li><a href='https://github.com/yourusername'><img className="il" src={gt} alt="gt" /></a></li>
-          <li><a href='https://www.linkedin.com/in/yourusername'><img className="il" src={insts} alt="LinkedIn" /></a></li>
-          <li><a href='https://www.instagram.com/yourusername'><img className="il" src={x} alt="Instagram" /></a></li>
-          <li><a href='https://twitter.com/yourusername'><img className="il" src={link} alt="Twitter" /></a></li>
-          <li><a href='https://azure.microsoft.com/en-us/'><img className="il" src={az} alt="Azure" /></a></li>
+          <li><a href='https://github.com/Bharatpandey30'><img className="il" src={gt} alt="gt" /></a></li>
+          <li><a href='https://www.linkedin.com/in/bharatpandey94/'><img className="il" src={link} alt="LinkedIn" /></a></li>
+          <li><a href='https://www.instagram.com/bharatpandey94'><img className="il" src={insts} alt="Instagram" /></a></li>
+          <li><a href='https://twitter.com/bharatpandey94'><img className="il" src={x} alt="Twitter" /></a></li>
+          <li><a href='https://dev.azure.com/Bpandey8352/'><img className="il" src={az} alt="Azure" /></a></li>
         </ul>
       </div>
       <div className='contactInfo'>

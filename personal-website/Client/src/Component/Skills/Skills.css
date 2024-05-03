@@ -43,8 +43,8 @@
   
   .imgBlock span {
     color: white;
-    margin-left: 5px;
     font-size: x-large;
+    text-align: center;
   }
   
   .img {
@@ -107,13 +107,10 @@
     initial-value: 0turn;
   }
   
-
-
-
-
   
   .Img1 {
     height: 200px;
+    width: 350px;
   }
   
   .rightArrow {
